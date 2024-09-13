@@ -6,16 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/pngegg"
     >
+
+    <ImageView
+        android:id="@+id/regShow"
+        android:layout_width="404dp"
+        android:layout_height="730dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tpts"
+        app:srcCompat="@drawable/pngegg" />
 
     <TextView
         android:id="@+id/Points"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/black"
         android:text="Points: 0"
-        android:textColor="@color/white"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,8 +48,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="UPGRADE COST"
-        android:background="@color/black"
-        android:textColor="@color/white"
 
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,26 +71,22 @@
 
     <TextView
         android:id="@+id/goalText"
-        android:layout_width="259dp"
-        android:layout_height="71dp"
-        android:background="@color/black"
+        android:layout_width="411dp"
+        android:layout_height="49dp"
         android:text="Goal 1: 100"
-        android:textColor="@color/white"
-        android:textSize="50sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/Points"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.267" />
+        app:layout_constraintVertical_bias="0.211" />
 
     <TextView
         android:id="@+id/tpts"
-        android:layout_width="163dp"
-        android:layout_height="32dp"
-        android:background="@color/black"
+        android:layout_width="408dp"
+        android:layout_height="41dp"
         android:text="Total: 0"
-        android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/goalText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -118,5 +120,19 @@
         app:layout_constraintStart_toEndOf="@+id/upgrade"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.742" />
+
+    <Button
+        android:id="@+id/themeShow"
+        android:layout_width="115dp"
+        android:layout_height="86dp"
+        android:text="CHANGE THEME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pops"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upgrade"
+        app:layout_constraintVertical_bias="0.708" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

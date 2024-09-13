@@ -1,15 +1,18 @@
 package com.example.lab1
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,6 +35,20 @@ class MainActivity : AppCompatActivity() {
             }
 
 
+        }
+        findViewById<Button>(R.id.themeShow).setOnClickListener{v->
+            findViewById<ImageView>(R.id.regShow).visibility = View.VISIBLE;
+            findViewById<TextView>(R.id.Points).setTextColor(Color.WHITE)
+            findViewById<TextView>(R.id.Points).setBackgroundColor(Color.BLACK)
+
+            findViewById<TextView>(R.id.nextLevel).setTextColor(Color.WHITE)
+            findViewById<TextView>(R.id.nextLevel).setBackgroundColor(Color.BLACK)
+
+            findViewById<TextView>(R.id.tpts).setTextColor(Color.WHITE)
+            findViewById<TextView>(R.id.tpts).setBackgroundColor(Color.BLACK)
+
+            findViewById<TextView>(R.id.goalText).setTextColor(Color.WHITE)
+            findViewById<TextView>(R.id.goalText).setBackgroundColor(Color.BLACK)
         }
         findViewById<Button>(R.id.tap).setOnClickListener{ v->
             count+=multiplier;
