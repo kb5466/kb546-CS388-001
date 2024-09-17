@@ -2,9 +2,9 @@
 
 The following **required** functionality is completed:
 
-* [ X ] Image and introductory message displayed on screen
-* [ X ] Button displayed on screen
-* [ X ] Toast with message appears when button is pressed 
+* [X] Image and introductory message displayed on screen
+* [X] Button displayed on screen
+* [X] Toast with message appears when button is pressed 
 
 The following **optional** features are implemented:
 
