@@ -28,11 +28,11 @@ The following **stretch** functionality is implemented:
 - [X] (3 pts) **User can press a 'Load More' button to see the next 5 emails displayed.**
   - ![Image/GIF showing the 'Load More' button in action](https://i.imgur.com/7TohlwK.gif) <!-- Replace this link with your actual image/GIF link -->
 
-- [ ] (3 pts) **Each email displays additional information:**
+- [X] (3 pts) **Each email displays additional information:**
   - Picture of the sender
   - Email sent date
   - Bolded information if the email is unread
-  - ![Image/GIF showing additional email information](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+  - ![Image/GIF showing additional email information](https://i.imgur.com/aX9tth1.gif) <!-- Replace this link with your actual image/GIF link -->
 
 ## Notes
 
