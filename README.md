@@ -27,7 +27,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/sDTokJw.mp4' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/5pkW2Rh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/5pkW2Rh.gif' title='Deleting Wishes' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/5pkW2Rh.gif' title='trying link' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
