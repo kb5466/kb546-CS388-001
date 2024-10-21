@@ -35,6 +35,9 @@ Here's a walkthrough of implemented user stories:
 ## Video 1
 <img src='https://github.com/kb5466/kb546-CS388-001/blob/Unit-4-Project/Animation.gif?raw=true' title='Video Walkthrough 1' width='' alt='Video Walkthrough 1' />
 
+## Video 2
+<img src='https://github.com/kb5466/kb546-CS388-001/blob/Unit-4-Project/2024-10-2118-15-22-ezgif.com-video-to-gif-converter.gif?raw=true' title='Video Walkthrough 1' width='' alt='Video Walkthrough 1' />
+
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
