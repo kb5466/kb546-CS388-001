@@ -35,12 +35,6 @@ Here's a walkthrough of implemented user stories:
 ## Video 1
 <img src='https://i.imgur.com/Re0t5JA.gif' title='Video Walkthrough 1' width='' alt='Video Walkthrough 1' />
 
-## Video 2
-<img src='https://i.imgur.com/sh4ALlm.gif' title='Video Walkthrough 2' width='' alt='Video Walkthrough 2' />
-
-## Video 3
-<img src='https://i.imgur.com/Ar0fFl0.gif' title='Video Walkthrough 3' width='' alt='Video Walkthrough 3' />
-
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
