@@ -32,9 +32,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/Re0t5JA.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img src='https://i.imgur.com/sh4ALlm.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img src='https://i.imgur.com/Ar0fFl0.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/Re0t5JA.gif' title='Video Walkthrough 1' width='' alt='Video Walkthrough 1' />
+<img src='https://i.imgur.com/sh4ALlm.gif' title='Video Walkthrough 2' width='' alt='Video Walkthrough 2' />
+<img src='https://i.imgur.com/Ar0fFl0.gif' title='Video Walkthrough 3' width='' alt='Video Walkthrough 3' />
 
 
 <!-- Replace this with whatever GIF tool you used! -->
