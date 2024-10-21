@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 ## Video 1
-<img src='https://i.ibb.co/31LvT4p/Animation.gif' title='Video Walkthrough 1' width='' alt='Video Walkthrough 1' />
+<img src='https://github.com/kb5466/kb546-CS388-001/blob/Unit-4-Project/Animation.gif?raw=true' title='Video Walkthrough 1' width='' alt='Video Walkthrough 1' />
 
 
 <!-- Replace this with whatever GIF tool you used! -->
