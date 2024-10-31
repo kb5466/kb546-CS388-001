@@ -29,18 +29,18 @@ The following **required** functionality is completed:
 
 The following **stretch** functionality is implemented:
 
-- [ ] (2 pts) **Add Swipe To Refresh to force a new network call to get new data**
-  - ![GIF showing Swipe to Refresh](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
+- [X] (2 pts) **Add Swipe To Refresh to force a new network call to get new data**
+  - ![GIF showing Swipe to Refresh](https://i.imgur.com/ovrAJMu.gif) <!-- Replace this link with your actual image/GIF link -->
 
 - [X] (2 pts) **Add setting toggle for user to create preference for caching data or not (Using Shared Preferences)**
-  - ![GIF showing Shared Preferences for caching](![Animation](https://github.com/user-attachments/assets/8cccb704-c2c3-4163-be78-b2844198b752)
+  - ![GIF showing Shared Preferences for caching](https://i.imgur.com/PPDRPSW.gif)
 ) <!-- Replace this link with your actual image/GIF link -->
 
 - [ ] (+3 pts) **Implement a Search UI to filter current RecyclerView entries or fetch data from the search API with query**
   - ![GIF showing Search UI functionality](http://i.imgur.com/link/to/your/gif/file.gif) <!-- Replace this link with your actual image/GIF link -->
 
 - [X] (2 pts) **Listen to network connectivity changes and create a UI to let people know they are offline and automatically reload new data if connectivity returns**
-  - ![GIF showing network connectivity detection](![Animation](https://github.com/user-attachments/assets/e94a6c62-7e0d-43e3-b7c8-15e5b56ddabb)) <!-- Replace this link with your actual image/GIF link -->
+  - ![GIF showing network connectivity detection](https://i.imgur.com/Kxz139S.gif) <!-- Replace this link with your actual image/GIF link -->
 
 ## Notes
 
@@ -58,7 +58,7 @@ Describe any challenges encountered while building the app. <!-- Replace this wi
 ## License
 
 ```plaintext
-    Copyright [yyyy] [Your Name]
+    Copyright 2024 Kristian Bulusan
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
