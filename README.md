@@ -18,11 +18,12 @@ The following **required** functionality is completed:
   - The app should cache the latest articles fetched from the NYT API in a local SQLite database using Room.
   - If the user has fetched data recently, those articles should be available offline.
   - Ensure old cached data is properly replaced with new data upon successful network fetches.
-  - ![GIF showing database caching functionality](![Animation](https://github.com/user-attachments/assets/41cac32f-40ce-4e67-b8d2-c20f63220ae2)
+  - ![GIF showing database caching functionality](https://i.imgur.com/NXu8h51.gif)
+  - ![GIF showing database caching functionality](https://i.imgur.com/ovrAJMu.gif)
 ) <!-- Replace this link with your actual image/GIF link -->
 
 - [X] (2 pts) **If user turns on airplane mode and closes and reopens app, old data from the database should be loaded**
-  - ![GIF showing offline mode functionality](![Animation](https://github.com/user-attachments/assets/85af2adb-9520-48cd-869c-b9315b202e21)
+  - ![GIF showing offline mode functionality](https://i.imgur.com/NXu8h51.gif)
 ) <!-- Replace this link with your actual image/GIF link -->
 
 ### Stretch Features
