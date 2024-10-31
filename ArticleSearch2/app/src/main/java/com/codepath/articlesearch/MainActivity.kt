@@ -86,7 +86,11 @@ class MainActivity : AppCompatActivity() {
             val dividerItemDecoration = DividerItemDecoration(this, it.orientation)
             articlesRecyclerView.addItemDecoration(dividerItemDecoration)
         }
-
+        if(!cacheSwitch.isChecked){
+            lifecycleScope.launch(IO) {
+                (application as ArticleApplication).db.articleDao().deleteAll()
+            }
+        }
         swipeContainer.setOnRefreshListener {
             Log.d(TAG, "SWIPE MOTION")
             Log.d(TAG,"${isNetworkConnected()} , ${cacheSwitch.isChecked}")
