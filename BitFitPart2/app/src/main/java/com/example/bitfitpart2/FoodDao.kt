@@ -20,15 +20,15 @@ interface FoodDao {
     fun deleteAll()
 
     @Query("SELECT MAX(calories) FROM Food_table")
-    fun maxCalories(): Int
+    fun maxCalories(): Flow<Int>
 
     @Query("SELECT MIN(calories) FROM Food_table")
-    fun minCalories(): Int
+    fun minCalories(): Flow<Int>
 
     @Query("SELECT AVG(calories) FROM Food_table")
-    fun avgCalories(): Double
+    fun avgCalories(): Flow<Double>
 
     @Query("SELECT SUM(calories) FROM Food_table")
-    fun totalCalories(): Int
+    fun totalCalories(): Flow<Int>
 
 }

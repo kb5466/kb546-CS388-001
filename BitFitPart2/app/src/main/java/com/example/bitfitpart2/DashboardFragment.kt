@@ -9,7 +9,10 @@ import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
 import com.example.bitfitpart1.R
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class DashboardFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,16 +27,31 @@ class DashboardFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_dashboard, container, false)
         lifecycleScope.launch(Dispatchers.IO){
             val foodDao = (activity?.application as FoodApplication).db.FoodDao()
-
-            val totalCal = foodDao.totalCalories()
-            val avgCal = foodDao.avgCalories()
-            val maxCal = foodDao.maxCalories()
-            val minCal = foodDao.minCalories()
-
-            view.findViewById<TextView>(R.id.TotalView)?.text = "Total Calories: $totalCal"
-            view.findViewById<TextView>(R.id.AverageView)?.text = "Average Calories: ${"%.2f".format(avgCal)}"
-            view.findViewById<TextView>(R.id.MaximumView)?.text = "Max Calories: $maxCal"
-            view.findViewById<TextView>(R.id.MinimumView)?.text = "Minimum Calories: $minCal"
+            launch{
+                foodDao.totalCalories().collectLatest{totalCal ->
+                    view.findViewById<TextView>(R.id.TotalView)?.text = "Total Calories: $totalCal"
+                }
+            }
+            launch{
+                foodDao.avgCalories().collectLatest {avgCal ->
+                    view.findViewById<TextView>(R.id.AverageView)?.text = "Average Calories: ${"%.2f".format(avgCal)}"
+                }
+            }
+            launch {
+                foodDao.maxCalories().collectLatest { maxCal ->
+                    println("MAX CAL: $maxCal")
+                    withContext(Dispatchers.Main) {
+                        view?.findViewById<TextView>(R.id.MaximumView)?.text = "Max Calories: ${maxCal ?: 0}"
+                    }
+                }
+            }
+            launch {
+                foodDao.minCalories().collectLatest { minCal->
+                    withContext(Dispatchers.Main){
+                        view.findViewById<TextView>(R.id.MinimumView)?.text = "minimum Calories: $minCal"
+                    }
+                }
+            }
 
         }
         return view
