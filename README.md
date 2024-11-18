@@ -4,7 +4,7 @@ Submitted by: Kristian Bulusan
 
 BitFitPart2 is a health metrics app that allows users to track their calorie intake, displaying the maximum, average, minimum and total logged calories
 
-Time spent: 8 hours spent in total
+Time spent: 4 hours spent in total
 
 ## Required Features
 
