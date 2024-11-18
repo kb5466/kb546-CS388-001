@@ -7,32 +7,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.bitfitpart2.MainActivity">
 
-    <Button
-        android:id="@+id/add_food"
-        android:layout_width="0dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:text="ADD FOOD"
-        app:layout_constraintBottom_toTopOf="@+id/switch1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/switch1"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginEnd="150dp"
-        android:gravity="center"
-        android:text="Switch"
-
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
@@ -63,4 +37,32 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
+    <Button
+        android:id="@+id/add_food"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="ADD FOOD"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:elevation="10dp"
+        android:id="@+id/switch1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:gravity="center"
+        android:text="Switch"
+
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

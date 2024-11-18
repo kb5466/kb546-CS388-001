@@ -1,6 +1,7 @@
 package com.example.bitfitpart2
 
 import android.content.Context
+import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -37,8 +38,8 @@ class FoodAdapter(private val context: Context, private val foods: List<DisplayF
             cal_text.text = food.calory_num + "\n Calories"
         }
 
-        override fun onClick(v: View?) {
-            TODO("Not yet implemented")
+        override fun onClick(p0: View?) {
+            Log.d(TAG, "${food_text.toString()}: ${cal_text.toString()} cal")
         }
     }
 }
