@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bitfitpart2.DashboardFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+
+        >
+
+        <TextView
+            android:id="@+id/AverageView"
+            android:layout_width="362dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="188dp"
+            android:text="Average Calories:"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/MaximumView"
+            android:layout_width="362dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="20dp"
+            android:text="Max Calories: "
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AverageView" />
+
+        <TextView
+            android:id="@+id/MinimumView"
+            android:layout_width="366dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="20dp"
+            android:text="Minimum Calories: "
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MaximumView" />
+
+        <TextView
+            android:id="@+id/TotalView"
+            android:layout_width="358dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="20dp"
+            android:text="Total Calories: "
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MinimumView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
