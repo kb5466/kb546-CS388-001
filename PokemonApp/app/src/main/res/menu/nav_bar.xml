@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_inspect"
+        android:icon="@drawable/inspect"
+        android:title="Inspect" />
+
+    <item
+        android:id="@+id/nav_interaction"
+        android:icon="@drawable/baseline_catching_pokemon_24"
+        android:title="Encounter" />
+
+    <item
+        android:id="@+id/nav_dex"
+        android:icon="@drawable/pokedex"
+        android:title="Pokedex" />
+</menu>
