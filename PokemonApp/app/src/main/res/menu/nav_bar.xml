@@ -3,12 +3,12 @@
     <item
         android:id="@+id/nav_inspect"
         android:icon="@drawable/inspect"
-        android:title="Inspect" />
+        android:title="Encounter Log" />
 
     <item
         android:id="@+id/nav_interaction"
         android:icon="@drawable/baseline_catching_pokemon_24"
-        android:title="Encounter" />
+        android:title="Battle" />
 
     <item
         android:id="@+id/nav_dex"

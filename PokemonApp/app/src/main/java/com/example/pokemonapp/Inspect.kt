@@ -1,59 +1,44 @@
 package com.example.pokemonapp
 
+import android.media.Image
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Inspect.newInstance] factory method to
- * create an instance of this fragment.
- */
-class Inspect : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
+class Inspect : AppCompatActivity(){
+    private lateinit var inspectSprite: ImageView
+    private lateinit var inspectName: TextView
+    private lateinit var inspectType: TextView
+    private lateinit var inspectHp: TextView
+    private lateinit var inspectAtk: TextView
+    private lateinit var inspectDef: TextView
+    private lateinit var inspectDate: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+        setContentView(R.layout.fragment_inspect)
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_inspect, container, false)
-    }
+        inspectSprite = findViewById(R.id.poke_photo)
+        inspectName = findViewById(R.id.poke_name)
+        inspectType = findViewById(R.id.poke_type)
+        inspectHp = findViewById(R.id.poke_hp)
+        inspectAtk = findViewById(R.id.poke_atk)
+        inspectDef = findViewById(R.id.poke_def)
+        inspectDate = findViewById(R.id.poke_date)
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Inspect.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Inspect().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        val poke = intent.getSerializableExtra(POKEMON_EXTRA) as Pokemon
+        inspectName.text = poke.name
+        inspectType.text = poke.type
+        inspectHp.text = "HP: ${poke.health}"
+        inspectAtk.text = "Atk: ${poke.attack}"
+        inspectDef.text = "Def: ${poke.defense}"
+        inspectDate.text = "Caught date: ${poke.date}"
+
+        Glide.with(this)
+            .load(poke.sprite)
+            .into(inspectSprite)
+
     }
 }

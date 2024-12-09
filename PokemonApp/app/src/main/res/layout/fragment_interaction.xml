@@ -1,14 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/battle_log"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Interaction">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/enemy_sprite"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/enemy_name"
+            android:layout_width="218dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="end"
+            android:text="RAYSLAYSLAY"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toStartOf="@+id/enemy_sprite"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/enemy_hp"
+            android:layout_width="133dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="end"
+            android:text="HP: 999/999"
+            android:textColor="#00c02c"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/enemy_sprite"
+            app:layout_constraintTop_toBottomOf="@+id/enemy_name" />
+
+        <ImageView
+            android:id="@+id/user_sprite"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="104dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enemy_hp"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="210dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp"
+            android:text="RAYSLAYSLAY"
+            android:textSize="25dp"
+            app:layout_constraintStart_toEndOf="@+id/user_sprite"
+            app:layout_constraintTop_toBottomOf="@+id/enemy_sprite" />
+
+        <TextView
+            android:id="@+id/user_hp"
+            android:layout_width="171dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="HP: 999/999"
+            android:textColor="#00c02c"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/user_sprite"
+            app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+        <Button
+            android:id="@+id/attack_button"
+            android:layout_width="185dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:background="#d73900"
+            android:text="Attack"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_sprite" />
+
+        <Button
+            android:id="@+id/run_button"
+            android:layout_width="279dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="88dp"
+            android:background="#d73900"
+            android:text="Run"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_sprite" />
+
+        <Button
+            android:id="@+id/catch_button"
+            android:layout_width="185dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:background="#00a5ab"
+            android:text="Catch"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_sprite" />
+
+        <TextView
+            android:id="@+id/encounter_count"
+            android:layout_width="208dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="32dp"
+            android:text="Encounter Count: 999999999999"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/user_sprite"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/battle_log_text"
+            android:layout_width="390dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="28dp"
+            android:text="Battle Log:"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/run_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

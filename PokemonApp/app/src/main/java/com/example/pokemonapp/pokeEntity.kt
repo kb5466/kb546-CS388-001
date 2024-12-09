@@ -11,6 +11,7 @@ import java.util.Locale
 @Entity(tableName = "poke_db")
 data class pokeEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    @ColumnInfo(name = "sprite") val sprite: String?,
     @ColumnInfo(name = "name") val name: String?,
     @ColumnInfo(name = "hp") val health: String?,
     @ColumnInfo(name = "attack") val attack: String?,

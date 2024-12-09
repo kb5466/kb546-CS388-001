@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentContainer"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fdc9c9"
     tools:context=".Inspect">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/inspectPoke"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -24,9 +27,11 @@
             android:id="@+id/poke_name"
             android:layout_width="261dp"
             android:layout_height="59dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="72dp"
             android:gravity="center"
+            android:background="#c46363"
+            android:textColor="#d0ecec"
             android:text="RAYSLAYSLAY"
             android:textSize="28dp"
             android:textStyle="bold"
@@ -34,31 +39,17 @@
             app:layout_constraintTop_toBottomOf="@+id/poke_photo" />
 
         <TextView
-            android:id="@+id/poke_level"
-            android:layout_width="84dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="24dp"
-            android:gravity="center"
-            android:text="Lv.100"
-            android:textSize="28dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/poke_name"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/poke_photo" />
-
-        <TextView
             android:id="@+id/poke_hp"
             android:layout_width="104dp"
             android:layout_height="55dp"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:text="HP: 999"
             android:textColor="#11AB00"
             android:textSize="28dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/poke_level" />
+            app:layout_constraintTop_toBottomOf="@+id/poke_name" />
 
         <TextView
             android:id="@+id/poke_atk"
@@ -77,11 +68,11 @@
             android:id="@+id/poke_def"
             android:layout_width="144dp"
             android:layout_height="55dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="72dp"
             android:gravity="center_vertical"
             android:text="Def: 999"
-            android:textColor="#B28E00"
+            android:textColor="#7f8a00"
             android:textSize="28dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/poke_type" />
@@ -93,9 +84,9 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
-            android:text="PSYCHIC TYPE"
+            android:text="PSYCHIC/PSYCHIC"
             android:textColor="#000000"
-            android:textSize="30dp"
+            android:textSize="25dp"
             app:layout_constraintStart_toEndOf="@+id/poke_hp"
             app:layout_constraintTop_toBottomOf="@+id/poke_name" />
 

@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [pokeEntity::class], version = 1)
+@Database(entities = [pokeEntity::class], version = 2)
 abstract class AppDatabase: RoomDatabase() {
 
     abstract fun pokeDao(): pokeDao
@@ -18,12 +18,13 @@ abstract class AppDatabase: RoomDatabase() {
             INSTANCE ?: synchronized(this) {
                 INSTANCE ?: buildDatabase(context).also { INSTANCE = it }
             }
-
         private fun buildDatabase(context: Context) =
             Room.databaseBuilder(
                 context.applicationContext,
-                AppDatabase::class.java, "poke-db"
-            ).build()
+                AppDatabase::class.java, "poke_db"
+            )
+                .fallbackToDestructiveMigration() // Automatically handle schema changes by recreating the database
+                .build()
     }
 
 }

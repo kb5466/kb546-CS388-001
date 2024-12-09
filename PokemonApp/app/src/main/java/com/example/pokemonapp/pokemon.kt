@@ -1,27 +1,14 @@
 package com.example.pokemonapp
 
-import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-class pokemon (
-    @SerializedName("name")
-    val pokemon_name: String? = null,
+data class Pokemon(
+    val sprite: String?,
+    val name: String?,
+    val type: String?,
+    val health: String?,
+    val attack: String?,
+    val defense: String?,
+    val date: String? = null
+):Serializable
 
-    @SerializedName("stats")
-    val statsList: List<Stats>,
-
-    @SerializedName("types")
-    val types: List<type>
-
-)
-data class Stats(
-    @SerializedName("base_stat") val baseStat:Int?,
-    @SerializedName("stat") val statList: List<stat>
-)
-data class stat(
-    @SerializedName("name") val name: String?
-)
-
-data class type(
-    @SerializedName("name")
-    val name: String?
-)
