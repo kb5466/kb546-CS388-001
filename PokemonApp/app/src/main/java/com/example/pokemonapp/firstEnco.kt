@@ -33,6 +33,7 @@ import org.json.JSONException
 *
 * */
 class firstEnco : Fragment() {
+    private val pokedex: Fragment = Pokedex()
     private val starterImgList: MutableList<ImageView> = mutableListOf()
     private val starterPokemons: MutableList<Pokemon> = mutableListOf()
     private val pokeList = arrayListOf(1, 4, 7, 10, 16, 25)
@@ -69,6 +70,10 @@ class firstEnco : Fragment() {
                                 type = pokeEntry.type
                             )
                         )
+                        val fragmentTransaction = parentFragmentManager.beginTransaction()
+                        fragmentTransaction.replace(R.id.frame_layout, pokedex)
+                        fragmentTransaction.addToBackStack(null) // Optional, allows navigating back
+                        fragmentTransaction.commit()
                     }
                 }
             }
