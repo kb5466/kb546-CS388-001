@@ -1,52 +1,21 @@
-# Brainstorming
-
-Ideas
--
-* Pokemon game app
-    * lets users interact with 3 pokemon a day, can either fight or catch it
-* team planner for team fight tactics
-    * lets users plan teams for team fight tactics with positioning and more
-* Gym app
-    * helps users do specific exercise and diets depending on wether they want to gain muscle, lose weight or be lean
-
-
-Evaluation
-* REAL APP HERE
-    * Mobile: App sees the pokemon they own and wild pokemons
-    * Story: The app lets players catch and interact with pokemons and play game
-    * Market: App for anyone who likes pokemons
-    * Habit: This app may be addictive but like wordle, it limits you with how much you interaction you have
-    * Scope: Uses database for local save, pulls 5 random pokemon to interact with everyday can be challenging but not impossible
-  <br>
-* team planner for team fight tactics
-    * Mobile: The app uses current team fight tactics set and lets people plan their units
-    * Story: people can play their units without having to be in the game
-    * Market: people who plays team fight tactics
-    * Habit: people might spend a lot of time in the app when planning their teams
-    * Scope: This app will be technically challenging to create, but should be possible.
-    * 
-  <br>
-*  Gym app
-    * Mobile: app uses input from the user and guide them to reach their goals
-    * Story: People can get help with their physical health goals
-    * Market: people whose interested 
-    * Habit: This app can be addictive for someone who wants to try different types of games within their taste.
-    * Scope: This app should be easy, research is required for the different data to be given to the user
-
 THE FINAL DECISION
-## **Pokemon game App**
+
+# **Pokemon game App**
+
+## All required features have been done
+
 ### 1. User Features (Required and Optional)
 **Required Features**
 
-1. Have players to choose from 3 different pokemons
-2.  Be able to save your own pokemon in local database
-3.  Have a wild pokemon interaction feature
+1. Have players to choose from 6 different pokemons       (✔)
+2.  Be able to save your own pokemon in local database    (✔)
+3.  Have a wild pokemon interaction feature               (✔)
 
 **Optional Features**
 
 1.  Have different pokeballs that increases the catch chances
 2.  Have a shop feature that lets users spend money
-3.  See the list of pokemons interacted
+3.  See the list of pokemons interacted                        (✔)
 
 ### 2. Screen Archetypes
 
@@ -75,45 +44,21 @@ THE FINAL DECISION
      [X]Navigates to:
         -   **Pokemon Caught Screen** (when pokemon is caught).
         -  **Pokemon defeated** (when the pokemon is defeated)
-        -   **Current Pokemon Out Screen** (Triggered by selecting "View Current Pokemon").
     -   Returns to the main menu upon back navigation.
 2.  **Pokemon Caught Screen**
     
       [X]Navigates to:
-        -   **Pokemon Details Screen** (Triggered by selecting a specific caught Pokemon to view details).
+        -   **Pokedex** (Triggered by selecting a specific caught Pokemon to view details).
     -   Returns to the pokedex.
 
-3. **Pokemon Caught Screen**
+3. **Pokedex**
       [X] Navigates to:
-          - **Current Pokemon Out Screen**(Showing the xp gained and the current level)
-5.  **Current Pokemon Out Screen**
+          - **Detail View**(Shows stats and sprite with the pokemon)
+5.  **Detail View**
 
     [X]   Navigates to:
-        -   **Pokemon Interaction Screen** (Triggered by selecting "Back to Interaction").
-        -   **Pokemon Battle Screen** (Triggered by selecting "Start Battle").
+        -   **Pokedex** (Triggered by selecting "Back to Interaction").
     -   Returns to the main menu upon back navigation.
-
-# DONE FEATURES
-1. Have players to choose from 3 different pokemons
-2.  Be able to save your own pokemon in local database
-3.  Have a wild pokemon interaction feature
-
-   [X]First pokemon interaction
-    -   lets players interact and choose different pokemons  
-    -   save pokemon to database
-   [X]Interacting with wild pokemons
-    -   randomized pokemon that can interact with either fight or catch
-    - randomized pokemons from local database
-    
-  [X]Caught pokemons
-    - Pokemons caught would be saved and displayed
-    - displayed in recycler view
-    
-  [X]Pokemon detail view
-   - pokemon would have their picture
-   - pokemon stats
-   - type
-   - encounter date
 
    
 
@@ -123,7 +68,39 @@ THE FINAL DECISION
 
 ## User Interactions
 <img src='https://i.imgur.com/MBq7dRT.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
 <img src='https://i.imgur.com/yz3mgDq.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+# Features
+
+## First Screen
+<img src='https://i.imgur.com/nrXDguX.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## After selecting a Pokemon
+<img src='https://i.imgur.com/T00oZnc.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## First Encounter screen doesnt show up
+<img src='https://i.imgur.com/HnbG86l.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Battle and Catch Feature
+<img src='https://i.imgur.com/bKSTmYs.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Randomized Pokemon Chosen for battle
+<img src='https://i.imgur.com/gOCZyk1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## User Pokemon faint Feature
+<img src='https://i.imgur.com/fNqD9Ad.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Wild pokemon faint feature
+
+<img src='https://i.imgur.com/xHt4BBM.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Encounter Log displays past encounters
+<img src='https://i.imgur.com/HlA60Ng.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+## Pokedex with detail view
+<img src='https://i.imgur.com/clGZprM.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
+
 
 
