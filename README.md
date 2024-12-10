@@ -52,15 +52,20 @@ THE FINAL DECISION
 
    [X]First pokemon interaction
     -   lets players interact and choose different pokemons  
-    -   places them as a buddy pokemon
+    -   save pokemon to database
    [X]Interacting with wild pokemons
     -   randomized pokemon that can interact with either fight or catch
+    - randomized pokemons from local database
+    
   [X]Caught pokemons
     - Pokemons caught would be saved and displayed
+    - displayed in recycler view
+    
   [X]Pokemon detail view
    - pokemon would have their picture
-   - pokemon description
-   - moves they have
+   - pokemon stats
+   - type
+   - encounter date
 
 
 ### **Flow Navigation** (Screen to Screen)
@@ -76,7 +81,7 @@ THE FINAL DECISION
     
       [X]Navigates to:
         -   **Pokemon Details Screen** (Triggered by selecting a specific caught Pokemon to view details).
-    -   Returns to the main menu upon back navigation.
+    -   Returns to the pokedex.
 
 3. **Pokemon Caught Screen**
       [X] Navigates to:
@@ -88,6 +93,29 @@ THE FINAL DECISION
         -   **Pokemon Battle Screen** (Triggered by selecting "Start Battle").
     -   Returns to the main menu upon back navigation.
 
+# DONE FEATURES
+1. Have players to choose from 3 different pokemons
+2.  Be able to save your own pokemon in local database
+3.  Have a wild pokemon interaction feature
+
+   [X]First pokemon interaction
+    -   lets players interact and choose different pokemons  
+    -   save pokemon to database
+   [X]Interacting with wild pokemons
+    -   randomized pokemon that can interact with either fight or catch
+    - randomized pokemons from local database
+    
+  [X]Caught pokemons
+    - Pokemons caught would be saved and displayed
+    - displayed in recycler view
+    
+  [X]Pokemon detail view
+   - pokemon would have their picture
+   - pokemon stats
+   - type
+   - encounter date
+
+   
 
 ### Wireframes
 
