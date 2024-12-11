@@ -3,6 +3,12 @@ THE FINAL DECISION
 # **Pokemon game App**
 
 ## All required features have been done
+## All required features have been done
+All Slides and Video Demo is in the Link [Google Folder](https://drive.google.com/drive/folders/1mZiOzZJ0eRM0yxlLxCk7SAEWA4hUAdNc?usp=drive_link)
+
+### Videos
+   - [Video Demo](https://youtu.be/_HeVR3oQbr8)
+
 
 ### 1. User Features (Required and Optional)
 **Required Features**
